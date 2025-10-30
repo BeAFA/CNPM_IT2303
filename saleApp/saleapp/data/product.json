@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Iphone 17",
+    "image": "https://cdn.tgdd.vn/Products/Images/42/342667/iphone-17-tim-thumb-0-600x600.jpg",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S25",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25_3_.png",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi 15",
+    "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/10/xiaomi-15-tim.jpg.webp",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 4,
+    "name": "Redmagic 10 Pro",
+    "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/11/red-magic-10-pro-den.jpg.webp",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 5,
+    "name": "Poco M7 Pro 5G",
+    "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/12/poco-m7-pro-5g-tim.jpg.webp",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 6,
+    "name": "Meizu 21 Pro",
+    "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/02/meizu-21-pro-xanh-duong.jpg.webp",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 7,
+    "name": "Vivo X200 Ultra",
+    "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2025/04/vivo-x200-ultra-trang.jpg.webp",
+    "price": "20000000",
+    "cate_id": 2
+  },
+  {
+    "id": 8,
+    "name": "OPPO reno 14",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-reno14-w.jpg",
+    "price": "20000000",
+    "cate_id": 2
+  }
+]
