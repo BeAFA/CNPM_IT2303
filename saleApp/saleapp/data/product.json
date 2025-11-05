@@ -3,56 +3,112 @@
     "id": 1,
     "name": "Iphone 17",
     "image": "https://cdn.tgdd.vn/Products/Images/42/342667/iphone-17-tim-thumb-0-600x600.jpg",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 2,
     "name": "Samsung Galaxy S25",
     "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25_3_.png",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 3,
     "name": "Xiaomi 15",
     "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/10/xiaomi-15-tim.jpg.webp",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 4,
     "name": "Redmagic 10 Pro",
     "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/11/red-magic-10-pro-den.jpg.webp",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 5,
     "name": "Poco M7 Pro 5G",
     "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/12/poco-m7-pro-5g-tim.jpg.webp",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 6,
     "name": "Meizu 21 Pro",
     "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/02/meizu-21-pro-xanh-duong.jpg.webp",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 7,
     "name": "Vivo X200 Ultra",
     "image": "https://cdn.mobilecity.vn/mobilecity-vn/images/2025/04/vivo-x200-ultra-trang.jpg.webp",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
   },
   {
     "id": 8,
     "name": "OPPO reno 14",
     "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-reno14-w.jpg",
-    "price": "20000000",
+    "price": 20000000,
     "cate_id": 2
+  },
+  {
+    "id": 9,
+    "name": "Galaxy Tab A11",
+    "image": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/522/345548/samsung-galaxy-tab-a11-xam-1-638977798785995714-750x500.jpg",
+    "price": 20000000,
+    "cate_id": 3
+  },
+  {
+    "id": 10,
+    "name": "Redmi Pad 2",
+    "image": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/522/339204/xiaomi-redmi-pad-2-wifi-xam-1-638889722791105651-750x500.jpg",
+    "price": 20000000,
+    "cate_id": 3
+  },
+  {
+    "id": 11,
+    "name": "Masstel Tab 11 Ultra 4G",
+    "image": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/522/340148/masstel-tab-11-ultra-4gb-128gb-xanh-1-638883685424010773-750x500.jpg",
+    "price": 20000000,
+    "cate_id": 3
+  },
+  {
+    "id": 12,
+    "name": "iPad Pro M4",
+    "image": "https://cdn.tgdd.vn/Products/Images/522/325513/ipad-pro-11-inch-m4-wifi-sliver-1-750x500.jpg",
+    "price": 20000000,
+    "cate_id": 3
+  },
+  {
+    "id": 13,
+    "name": "MSI Katana 15",
+    "image": "https://product.hstatic.net/200000722513/product/1024__1__1755e5c9f3e84b71a96d115e2a57cae6_master.png",
+    "price": 20000000,
+    "cate_id": 1
+  },
+  {
+    "id": 14,
+    "name": "HP VICTUS 15",
+    "image": "https://cdn.hstatic.net/products/200000722513/af4lhmww5i_a0e1976f7e564523b3f0fc7f1b911222_master.png",
+    "price": 20000000,
+    "cate_id": 1
+  },
+  {
+    "id": 15,
+    "name": "Acer Nitro 16 AI ProPanel",
+    "image": "https://cdn.hstatic.net/products/200000722513/ro-16s-ai-an16s-61-non-fingerprint-with-backlit-on-wp-ai-logo-black-01_062211582f2f41d99b8c6276ac1e3634_master.png",
+    "price": 20000000,
+    "cate_id": 1
+  },
+  {
+    "id": 16,
+    "name": "Lenovo LOQ Essential",
+    "image": "https://cdn.hstatic.net/products/200000722513/loq_essential_15irx11_ct1_01_4961c63b8ebb481baa44fe9bf69f1db7_master.png",
+    "price": 20000000,
+    "cate_id": 1
   }
 ]
