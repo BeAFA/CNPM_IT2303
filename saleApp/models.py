@@ -57,7 +57,7 @@ if __name__ == "__main__":
     #             db.session.add(Product(**p))
         import hashlib
         password = hashlib.md5("123".encode("utf-8")).hexdigest()
-        u1 = User(name="User", username = "user", password =password)
+        u1 = User(name="User", username = "admin", password =password)
 
         db.session.add(u1)
 
