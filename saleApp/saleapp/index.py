@@ -1,11 +1,10 @@
 import math
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, session, jsonify
 
 import dao
 from saleapp import app, login, admin, db
 from flask_login import login_user, current_user, logout_user
 import cloudinary.uploader
-
 
 
 @app.route('/')
@@ -44,7 +43,7 @@ def login_my_user():
     return render_template("login.html", err_msg=err_msg)
 
 
-@app.route('/admin-login',methods=['post'])
+@app.route('/admin-login', methods=['post'])
 def admin_login_process():
     if request.method.__eq__('POST'):
         username = request.form.get('username')
@@ -59,10 +58,12 @@ def admin_login_process():
             err_msg = "Tài khoản hoặc mật khẩu không đúng!"
     return render_template("login.html", err_msg=err_msg)
 
+
 @app.route('/logout')
 def logout_my_user():
     logout_user()
     return redirect('/')
+
 
 @app.context_processor
 def common_attribute():
@@ -70,30 +71,28 @@ def common_attribute():
         "cates": dao.load_category()
     }
 
+
 @login.user_loader
 def get_user(user_id):
     return dao.get_user_by_id(user_id)
 
-@app.route('/register', methods=['get','post'])
-def register():
 
+@app.route('/register', methods=['get', 'post'])
+def register():
     err_msg = None
 
     if request.method.__eq__('POST'):
-
 
         password = request.form.get('password')
         confirm = request.form.get('confirm')
 
         if password != confirm:
-            err_msg= "Mật khẩu không khớp"
+            err_msg = "Mật khẩu không khớp"
         else:
             name = request.form.get('name')
             username = request.form.get('username')
             avatar = request.files.get('avatar')
             file_path = None
-
-
 
             if avatar:
                 res = cloudinary.uploader.upload(avatar)
@@ -107,9 +106,56 @@ def register():
                 db.session.rollback()
                 err_msg = "Hệ thống đang bị lỗi, vui lòng quay lại sau!"
 
+    return render_template('register.html', err_msg=err_msg)
 
 
-    return render_template('register.html',err_msg=err_msg)
+@app.route('/cart')
+def cart():
+    # session['cart'] = {
+    #     "1": {
+    #         "id": "1",
+    #         "name": "Iphone 17",
+    #         "price": 18000000,
+    #         "quantity": 2
+    #     },
+    #     "2": {
+    #         "id": "2",
+    #         "name": "Acer Nitro 16 AI ProPanel",
+    #         "price": 50000000,
+    #         "quantity": 1
+    #     }
+    # }
+
+    return render_template("cart.html")
+
+
+@app.route('/api/carts', methods=['post'])
+def add_to_cart():
+    cart = session.get('cart')
+
+    if cart:
+        cart = {}
+
+    id = str(request.json.get('id'))
+
+    if id in cart:
+        cart[id]['quantity'] += 1
+    else:
+        cart[id] = {
+            "id": id,
+            "name": request.json.get('name'),
+            "price": request.json.get('price'),
+            "quantity": 1
+        }
+
+    session['cart'] = cart
+
+    print(session['cart'])
+
+    return jsonify({
+        'total_quantity': 0,
+        'total_amount': 0
+    })
 
 if __name__ == "__main__":
     with app.app_context():
